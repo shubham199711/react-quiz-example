@@ -106,7 +106,10 @@ function App() {
 								);
 							})}
 						</div>
-						<h3>{currentQuestion?.question}</h3>
+						<h3>
+							Q-{currentQuestion?.questionId}.{' '}
+							{currentQuestion?.question}
+						</h3>
 						{currentQuestion?.code && (
 							<pre>
 								<code>{currentQuestion?.code}</code>
